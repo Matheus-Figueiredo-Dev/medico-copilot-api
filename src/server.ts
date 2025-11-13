@@ -1,5 +1,7 @@
-function myName(name: string): string {
-	return `Olá ${name}, bem-vindo ao TypeScript!`;
-}
+import app from "./app.js";
 
-console.log(myName("Monkey D Theuz"));
+const PORT = process.env.PORT || 3005;
+
+app.listen(PORT, () => {
+	console.log(`Server is running at port ${PORT}`);
+});

@@ -10,9 +10,11 @@
 		"module": "nodenext",
 		"target": "es2022",
 		"moduleResolution": "NodeNext",
-		"types": [],
+
+		"types": ["node"],
+		"lib": ["es2022"],
 		// For nodejs:
-		// "lib": ["es2020"],
+		//"lib": ["es2022"],
 		// "types": ["node"],
 		// and npm install -D @types/node
 

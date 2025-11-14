@@ -7,3 +7,9 @@ export const openaiTranscribeAudio = async (
 export const openaiTranscribeText = async (_text: string): Promise<void> => {
 	// Lógica para transcrever o texto usando OpenAI
 };
+
+export const openaiGenerateDiagnosis = async (
+	_transcript: string,
+): Promise<void> => {
+	// Lógica para gerar diagnóstico usando OpenAI
+};

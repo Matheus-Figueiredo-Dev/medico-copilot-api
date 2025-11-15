@@ -11,7 +11,7 @@ export const openaiTranscribeAudio = async (
 	file: Express.Multer.File,
 ): Promise<any> => {
 	const response = await client.audio.transcriptions.create({
-		file: file.buffer,
+		file: new File([file.buffer], file.originalname),
 		model: "gpt-4o-audio",
 	});
 

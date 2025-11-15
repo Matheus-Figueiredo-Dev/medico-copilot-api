@@ -1,21 +1,20 @@
-
 {
-  "compilerOptions": {
-    "target": "es2022", // Transpila para uma versão moderna do JavaScript
-    "module": "esnext", // Usa o sistema de módulos CommonJS, necessário para o Node.js
-    "moduleResolution": "node", // Resolve os imports como o Node faz,buscando em node_modules
-    "lib": ["ES2022"], // Permite usar funcionalidades da linguagem baseadas no ES2022
-    "rootDir": "src", // Diretório onde está o código-fonte (entrada)
-    "outDir": "dist", // Diretório onde os arquivos compilados serão salvos (saída)
-    "resolveJsonModule": true, // Permite importar arquivos .json como módulos (util para config, Firebase etc)
-    "esModuleInterop": true, // Permite usar `import express from 'express'` com libs que usam importação CommomJS
-    "allowSyntheticDefaultImports": true, // Permite importar de forma "default" mesmo se a lib não importar assim (mais flexível)
-    "strict": true, // Ativa todas as verificações do tipo TypeScript (boas práticas)
-    "skipLibCheck": true, // Evita checar tipos de pacotes em node_modules (melhora o desempenho build)
-    "forceConsistentCasingInFileNames": true, // Garante consistência de maiúsculas e minúsculas nos caminhos dos arquivos
-    "noFallthroughCasesInSwitch": true, // Impede erros ao esquecer de colocar o `break` nos `case` de `switch`
-    "noImplicitOverride": true // Garante que ao sobrescrever métodos, você use a palavra-chave `override` (mais seguro)
-  },
-  "include": ["src"], // Apenas os arquivos dentro da pasta `src` serão analisados
-  "exclude": ["node_modules", "dist"] // Ignora essas pastas durante a compilação
+	"compilerOptions": {
+		"target": "es2022", // Transpila para uma versão moderna do JavaScript
+		"module": "esnext", // Usa o sistema de módulos CommonJS, necessário para o Node.js
+		"moduleResolution": "node", // Resolve os imports como o Node faz,buscando em node_modules
+		"lib": ["ES2022"], // Permite usar funcionalidades da linguagem baseadas no ES2022
+		"rootDir": "src", // Diretório onde está o código-fonte (entrada)
+		"outDir": "dist", // Diretório onde os arquivos compilados serão salvos (saída)
+		"resolveJsonModule": true, // Permite importar arquivos .json como módulos (util para config, Firebase etc)
+		"esModuleInterop": true, // Permite usar `import express from 'express'` com libs que usam importação CommomJS
+		"allowSyntheticDefaultImports": true, // Permite importar de forma "default" mesmo se a lib não importar assim (mais flexível)
+		"strict": true, // Ativa todas as verificações do tipo TypeScript (boas práticas)
+		"skipLibCheck": true, // Evita checar tipos de pacotes em node_modules (melhora o desempenho build)
+		"forceConsistentCasingInFileNames": true, // Garante consistência de maiúsculas e minúsculas nos caminhos dos arquivos
+		"noFallthroughCasesInSwitch": true, // Impede erros ao esquecer de colocar o `break` nos `case` de `switch`
+		"noImplicitOverride": true // Garante que ao sobrescrever métodos, você use a palavra-chave `override` (mais seguro)
+	},
+	"include": ["src"], // Apenas os arquivos dentro da pasta `src` serão analisados
+	"exclude": ["node_modules", "dist"] // Ignora essas pastas durante a compilação
 }

@@ -3,7 +3,7 @@ import type { Request, Response } from "express";
 import {
 	openaiTranscribeAudio,
 	openaiTranscribeText,
-} from "../services/openaiService.js";
+} from "../services/openaiService";
 
 // Controlador para transcrever áudio
 export const transcribeAudio = async (

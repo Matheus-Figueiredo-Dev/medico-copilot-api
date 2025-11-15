@@ -3,7 +3,7 @@ import multer from "multer";
 import {
 	transcribeAudio,
 	transcribeText,
-} from "../controllers/trancribeController.js";
+} from "../controllers/transcribeController";
 
 // Configuração do Multer para receber arquivos de áudio
 const upload = multer({ storage: multer.memoryStorage() });

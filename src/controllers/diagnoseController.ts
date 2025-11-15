@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { openaiGenerateDiagnosis } from "../services/openaiService.js";
+import { openaiGenerateDiagnosis } from "../services/openaiService";
 
 export const diagnoseController = async (
 	req: Request,
